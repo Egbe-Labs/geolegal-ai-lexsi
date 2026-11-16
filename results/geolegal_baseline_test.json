@@ -1,0 +1,6 @@
+{
+  "model": "CohereLabs/tiny-aya-global",
+  "timestamp": "2026-11-16T01:41:54.385842+00:00",
+  "question": "\nA company established in Nigeria processes personal data\nonly within Nigeria for Nigerian customers.\n\nDoes the EU GDPR automatically apply?\n\nAnswer using:\nDECISION: APPLIES, DOES_NOT_APPLY, or\nINSUFFICIENT_INFORMATION\nEXPLANATION: Brief explanation\n",
+  "response": "DECISION: INSUFFICIENT_INFORMATION\n\nEXPLANATION: The EU GDPR applies to personal data processing activities that occur within the EU, regardless of the location of the data subject. However, the specific circumstances of the company, such as whether it processes data for customers outside Nigeria, may affect the applicability of the GDPR. Without more information about the company's activities and the location of the data subjects, it is not possible to determine whether the GDPR applies."
+}

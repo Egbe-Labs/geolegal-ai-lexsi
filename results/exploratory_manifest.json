@@ -1,0 +1,10 @@
+{
+  "artifact": "results/geolegal_baseline_test.json",
+  "classification": "EXPLORATORY_SMOKE_TEST",
+  "included_in_scored_metrics": false,
+  "model": "CohereLabs/tiny-aya-global",
+  "observed_label": "INSUFFICIENT_INFORMATION",
+  "sha256": "9C2C9B705E5BA68DB3D8007A70BAFFC6309DCFA482F27C7F3E164006359CE9F3",
+  "structure": "outer JSON with legacy plain-text response",
+  "validation_status": "STRUCTURE_VALID_LEGAL_CORRECTNESS_NOT_REVIEWED"
+}

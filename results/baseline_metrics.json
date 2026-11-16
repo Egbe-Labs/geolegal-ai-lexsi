@@ -1,0 +1,27 @@
+{
+  "accuracy": null,
+  "confusion_matrix": {
+    "APPLIES": {
+      "APPLIES": 0,
+      "DOES_NOT_APPLY": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "DOES_NOT_APPLY": {
+      "APPLIES": 0,
+      "DOES_NOT_APPLY": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "INSUFFICIENT_INFORMATION": {
+      "APPLIES": 0,
+      "DOES_NOT_APPLY": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    }
+  },
+  "excluded_pending_review": 15,
+  "macro_f1": null,
+  "parse_rate": null,
+  "per_label": {},
+  "per_jurisdiction_accuracy": {},
+  "scored_count": 0,
+  "status": "NO_LEGAL_REVIEWED_SCENARIOS"
+}

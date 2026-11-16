@@ -1,0 +1,17 @@
+project = "GeoLegal-AI"
+seed = 42
+model_id = "CohereLabs/tiny-aya-global"
+model_revision = "af89d219b53ed9b13b8a4645f9c8028973510324"
+prompt_version = "v1"
+
+[generation]
+do_sample = false
+max_new_tokens = 384
+
+[retrieval]
+top_k = 4
+
+[experiment]
+arms = ["E1", "E2", "E3"]
+labels = ["APPLIES", "DOES_NOT_APPLY", "INSUFFICIENT_INFORMATION"]
+jurisdictions = ["NIGERIA", "KENYA", "EU"]
