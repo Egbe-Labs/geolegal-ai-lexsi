@@ -1,0 +1,9 @@
+{
+  "approval_basis": "user_reported",
+  "approved_status": "LEGAL_REVIEWED",
+  "record_count": 15,
+  "sha256": "cb93baa88e390b1b264fb36e423e910bb4edb309c134f3fc9af3757a62feffad",
+  "source_dataset": "data/eval/held_out_proposed_v2.jsonl",
+  "frozen_dataset": "data/eval/held_out_approved_v1.jsonl",
+  "notes": "All 15 scenarios were reported by the project owner as having received human legal approval. No reviewer identity, credentials, approval date, or signature was supplied or inferred."
+}

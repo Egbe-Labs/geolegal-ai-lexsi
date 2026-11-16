@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import unittest
 from collections import Counter
 from pathlib import Path
@@ -13,11 +14,59 @@ class FirstMilestoneTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.scenarios = load_scenarios("data/eval/held_out_initial.jsonl")
+        cls.proposed = load_scenarios("data/eval/held_out_proposed_v2.jsonl")
+        cls.approved = load_scenarios("data/eval/held_out_approved_v1.jsonl")
 
     def test_dataset_has_five_scenarios_per_jurisdiction(self) -> None:
         self.assertEqual(len(self.scenarios), 15)
         self.assertEqual(Counter(item.jurisdiction for item in self.scenarios), {"NIGERIA": 5, "KENYA": 5, "EU": 5})
         self.assertTrue(all(item.review_status == "PENDING_REVIEW" for item in self.scenarios))
+
+    def test_proposed_revision_preserves_ids_labels_and_status(self) -> None:
+        original = {item.scenario_id: item for item in self.scenarios}
+        proposed = {item.scenario_id: item for item in self.proposed}
+        self.assertEqual(set(original), set(proposed))
+        self.assertEqual(len(proposed), 15)
+        self.assertEqual(Counter(item.jurisdiction for item in self.proposed), {"NIGERIA": 5, "KENYA": 5, "EU": 5})
+        self.assertTrue(all(item.review_status == "PENDING_REVIEW" for item in self.proposed))
+        self.assertTrue(all(proposed[key].expected_label == original[key].expected_label for key in original))
+
+    def test_proposed_revision_changes_only_four_scenarios(self) -> None:
+        original = {item.scenario_id: item for item in self.scenarios}
+        proposed = {item.scenario_id: item for item in self.proposed}
+        changed = {key for key in original if original[key].to_dict() != proposed[key].to_dict()}
+        self.assertEqual(changed, {"NG-EVAL-003", "KE-EVAL-002", "KE-EVAL-003", "EU-EVAL-004"})
+        self.assertIn("automatically collect, record, store", proposed["KE-EVAL-002"].scenario)
+        self.assertIn("public international law", proposed["EU-EVAL-004"].scenario)
+
+    def test_frozen_dataset_changes_only_review_status(self) -> None:
+        proposed = {item.scenario_id: item.to_dict() for item in self.proposed}
+        approved = {item.scenario_id: item.to_dict() for item in self.approved}
+        self.assertEqual(set(approved), set(proposed))
+        self.assertEqual(len(approved), 15)
+        for scenario_id in proposed:
+            self.assertEqual(approved[scenario_id]["review_status"], "LEGAL_REVIEWED")
+            approved_without_status = approved[scenario_id] | {"review_status": "PENDING_REVIEW"}
+            self.assertEqual(approved_without_status, proposed[scenario_id])
+
+    def test_approval_manifest_matches_frozen_dataset(self) -> None:
+        dataset_path = Path("data/eval/held_out_approved_v1.jsonl")
+        manifest = json.loads(Path("data/eval/held_out_approved_v1.manifest.json").read_text(encoding="utf-8"))
+        checksum = hashlib.sha256(dataset_path.read_bytes()).hexdigest()
+        self.assertEqual(manifest["source_dataset"], "data/eval/held_out_proposed_v2.jsonl")
+        self.assertEqual(manifest["record_count"], 15)
+        self.assertEqual(manifest["approved_status"], "LEGAL_REVIEWED")
+        self.assertEqual(manifest["approval_basis"], "user_reported")
+        self.assertEqual(manifest["sha256"], checksum)
+
+    def test_baseline_notebook_defaults_to_no_inference_and_versioned_outputs(self) -> None:
+        notebook = json.loads(Path("notebooks/01_baseline.ipynb").read_text(encoding="utf-8"))
+        source = "".join("".join(cell.get("source", [])) for cell in notebook["cells"])
+        self.assertIn("DATASET_REVISION = 'held_out_approved_v1'", source)
+        self.assertIn("RUN_INFERENCE = False", source)
+        self.assertIn("baseline_predictions_{DATASET_REVISION}.jsonl", source)
+        self.assertIn("baseline_metrics_{DATASET_REVISION}.json", source)
+        self.assertIn("PREDICTIONS_PATH.open('x'", source)
 
     def test_schema_rejects_invalid_label(self) -> None:
         value = self.scenarios[0].to_dict() | {"expected_label": "MAYBE"}

@@ -3,6 +3,10 @@ seed = 42
 model_id = "CohereLabs/tiny-aya-global"
 model_revision = "af89d219b53ed9b13b8a4645f9c8028973510324"
 prompt_version = "v1"
+dataset_path = "data/eval/held_out_approved_v1.jsonl"
+dataset_revision = "held_out_approved_v1"
+predictions_path = "results/baseline_predictions_held_out_approved_v1.jsonl"
+metrics_path = "results/baseline_metrics_held_out_approved_v1.json"
 
 [generation]
 do_sample = false

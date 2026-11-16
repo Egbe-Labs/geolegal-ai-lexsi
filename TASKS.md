@@ -51,13 +51,15 @@ This is the shortest dependency-ordered path from environment verification to pu
 - [ ] Integrate CuratorKIT only through its verified API; otherwise record the blocker and retain toolkit-neutral canonical data.
 - [x] Draft the initial held-out candidate set with five scenarios per jurisdiction and only the three closed labels; keep all proposed keys excluded pending legal review.
   - Evidence: `data/eval/held_out_initial.jsonl` contains 15 source-linked `PENDING_REVIEW` scenarios grounded in NDPA 2023 section 2, Kenya DPA 2019 section 4, and GDPR Article 3. These are candidate answer keys, not validated legal conclusions.
-- [ ] Obtain human/legal review and change status only with reviewer evidence.
+- [x] Obtain human/legal review and change status only with reviewer evidence.
+  - Evidence: the project owner reported approval of all 15 proposed-v2 scenarios; `data/eval/held_out_approved_v1.jsonl` records `LEGAL_REVIEWED`. The manifest deliberately records no unsupplied reviewer identity, credentials, date, or signature.
 
 ## 4. Freeze splits and leakage controls
 
 - [ ] Implement family-aware deterministic train/validation/evaluation manifests.
 - [ ] Implement exact, normalized, overlap, and derived-scenario leakage checks with tests.
-- [ ] Freeze and hash the held-out smoke evaluation manifest before training.
+- [x] Freeze and hash the held-out smoke evaluation manifest before training.
+  - Evidence: `data/eval/held_out_approved_v1.manifest.json` binds 15 records to the frozen dataset with SHA-256 `cb93baa88e390b1b264fb36e423e910bb4edb309c134f3fc9af3757a62feffad`.
 - [ ] Save a machine-readable leakage report and confirm zero unresolved leakage.
 
 ## 5. Build authoritative retrieval
