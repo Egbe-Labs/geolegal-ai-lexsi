@@ -56,7 +56,10 @@ This is the shortest dependency-ordered path from environment verification to pu
 
 ## 4. Freeze splits and leakage controls
 
-- [ ] Implement family-aware deterministic train/validation/evaluation manifests.
+- [~] Implement family-aware deterministic train/validation/evaluation manifests.
+  - Evidence: `data/train/candidates_v1.jsonl` contains family-disjoint candidate `TRAIN` and `VALIDATION` splits; `data/eval/protected_held_out_registry_v1.json` protects all three evaluation revisions. Final training manifests remain blocked pending legal review.
+- [x] Implement protected-set leakage checks for IDs, families, normalized exact text, and token/character n-gram similarity.
+  - Evidence: `src/geolegal/training_data.py`, `data/train/leakage_report_v1.json`, and `tests/test_training_data.py`. Near matches are blocking and require manual clearance.
 - [ ] Implement exact, normalized, overlap, and derived-scenario leakage checks with tests.
 - [x] Freeze and hash the held-out smoke evaluation manifest before training.
   - Evidence: `data/eval/held_out_approved_v1.manifest.json` binds 15 records to the frozen dataset with SHA-256 `cb93baa88e390b1b264fb36e423e910bb4edb309c134f3fc9af3757a62feffad`.
@@ -117,7 +120,8 @@ This is the shortest dependency-ordered path from environment verification to pu
 - [ ] Review every source/model/toolkit license and remove material that cannot be published.
 - [ ] Publish only reviewed dataset partitions and clearly label synthetic/unreviewed material.
 - [ ] Publish all created submission models, adapters, logs, and datasets in public, ungated Hugging Face repositories and organize them into the required public model and dataset collections; exclude anything that cannot legally be published.
-- [ ] Finalize README, model card, dataset card, experiment report, safety/limitations, reproducibility commands, and actual artifact links.
+- [~] Finalize README, model card, dataset card, experiment report, safety/limitations, reproducibility commands, and actual artifact links.
+  - Evidence: `README.md`, `SUBMISSION.md`, and `SUBMISSION_AUDIT.md` provide a transparent baseline-only write-up and reproducibility instructions. Model/dataset cards and real Hugging Face artifact links remain missing.
 - [ ] Verify the public GitHub repository and Colab from a clean account/environment.
 - [ ] Submit Track 1 artifacts and record the exact public revisions; never replace missing results with claims.
 

@@ -1,0 +1,384 @@
+{
+  "protected_datasets": [
+    {
+      "path": "data/eval/held_out_initial.jsonl",
+      "record_count": 15,
+      "sha256": "e5f04b7fe18c1979d0b1cb251999b483b6da613e804bc2488b1002ff6d5deb32"
+    },
+    {
+      "path": "data/eval/held_out_proposed_v2.jsonl",
+      "record_count": 15,
+      "sha256": "8bb8fae2204c6932d9cacef1a0246fe031a261ba17bbe1d13ab87d3074ad7fad"
+    },
+    {
+      "path": "data/eval/held_out_approved_v1.jsonl",
+      "record_count": 15,
+      "sha256": "cb93baa88e390b1b264fb36e423e910bb4edb309c134f3fc9af3757a62feffad"
+    }
+  ],
+  "registry_version": "protected-held-out-v1",
+  "signature_count": 45,
+  "signatures": [
+    {
+      "normalized_sha256": "d9c8fe424beefacc5901207f0789b8901bb72227f8480011b0de936a9f8ccb62",
+      "normalized_text": "a company domiciled in nigeria processes customer names and contact details at its lagos office for its nigerian retail service does the nigeria data protection act 2023 apply to this processing",
+      "scenario_family_id": "protected::NG-EVAL-001",
+      "scenario_id": "NG-EVAL-001",
+      "scenario_sha256": "bffa6d567ee27a1e077b3f786d41e764ac77735f4c3c49e15b40b786a7c41f51",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "ff42c483c3636122be7bfd32a3472127ca83daef7f47483869615c2def5a49e2",
+      "normalized_text": "a controller incorporated and operating only in canada remotely collects personal data from individuals while they are in nigeria through a service directed to those individuals does the nigeria data protection act 2023 apply to this processing",
+      "scenario_family_id": "protected::NG-EVAL-002",
+      "scenario_id": "NG-EVAL-002",
+      "scenario_sha256": "d9ba453dcc2edc1b59e38452ae8a17cf13c8e8a9870afc58f24612c596cae3bd",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "d7a2ba0e7ffcc9c0c7521e931161f6f8f09c6ce7ffc8977ef720dc24ded4e7aa",
+      "normalized_text": "a company incorporated and operating only in canada processes personal data only about individuals located in canada and no part of the processing occurs in nigeria on the stated facts does the nigeria data protection act 2023 apply",
+      "scenario_family_id": "protected::NG-EVAL-003",
+      "scenario_id": "NG-EVAL-003",
+      "scenario_sha256": "8cb971efce260c2cce5f31d06c6208da4bf4d232a735b82cfddfb10dca878970",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "6537bda24637de58a2282c90a72185be44cc5646b4d125237071ed370f30a964",
+      "normalized_text": "an online service processes personal data but the facts do not state where the controller operates where processing occurs or whether any data subject is in nigeria can applicability of the nigeria data protection act 2023 be determined from these facts",
+      "scenario_family_id": "protected::NG-EVAL-004",
+      "scenario_id": "NG-EVAL-004",
+      "scenario_sha256": "8bd86938274627bc687e9f3f542ddccf88158207a6762d07bda6cc6870b1603c",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "9e709a847d97aaf426db34d8fa0e0f6e107549fcc0533a3548c45a2465735aef",
+      "normalized_text": "a data processor operating from an abuja office processes personal data on behalf of a controller located outside nigeria does the nigeria data protection act 2023 apply to the processor s stated processing",
+      "scenario_family_id": "protected::NG-EVAL-005",
+      "scenario_id": "NG-EVAL-005",
+      "scenario_sha256": "0c9bb6d138919303264f1960a6279faa06b32a44254ec288238434caaabd0b79",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "cac75fa8c47a761ae19d83533ba1763f8ccf07afa9633217f3166647e234d129",
+      "normalized_text": "a company established in kenya processes a recorded customer database by automated means while operating in nairobi does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-001",
+      "scenario_id": "KE-EVAL-001",
+      "scenario_sha256": "d2ac4f848613afd3de754a060e5abddacca17400f99014d028c9e20551359d1e",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "82033893abdc138c2a155520dc4c5a9a6f425f00cf2b6cb234a2307b0a65ebb0",
+      "normalized_text": "a controller not established or ordinarily resident in kenya processes personal data of data subjects located in kenya through an online service does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-002",
+      "scenario_id": "KE-EVAL-002",
+      "scenario_sha256": "b118ede64859f66ce83703fd5fd6ccd432284e4874b158b49352c73ea5e15db7",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "b883b5d70f996fc6d0791c6b6b968c96e42563584e44bbd27ff4f03f1978f4ac",
+      "normalized_text": "a controller established only in brazil processes automated records only about data subjects located in brazil and no processing occurs in kenya on the stated facts does the kenya data protection act 2019 apply",
+      "scenario_family_id": "protected::KE-EVAL-003",
+      "scenario_id": "KE-EVAL-003",
+      "scenario_sha256": "8d35d450811443e5ce1c03876d6ef92e371a40a61411d5e591a7896543ac60dd",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "66764d2b37562c803946e07f27fa8e7ccd8860216bd3ff67fa163a0032b6e5fc",
+      "normalized_text": "a business processes customer information but the facts do not specify whether the information is recorded where the business is established where processing occurs or where the data subjects are located can applicability of the kenya data protection act 2019 be determined from these facts",
+      "scenario_family_id": "protected::KE-EVAL-004",
+      "scenario_id": "KE-EVAL-004",
+      "scenario_sha256": "e0cb553a6e3b1bba432830e81af8f9fc881cba81cba85c63503b6ed03617d220",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "9634a825f0183e58fb58d2125b7afae33ebc9bc4e1a72b3884f1f8dbe4c548ba",
+      "normalized_text": "a processor ordinarily resident in kenya processes a non automated set of personal records that forms part of a structured filing system while in kenya does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-005",
+      "scenario_id": "KE-EVAL-005",
+      "scenario_sha256": "ed4e382cda2eebb36ffca8041e242c1b05568da684089f386f69186d34f73f92",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "446af36fe27c6f34ea7fe411eccffa270cdef6604632cd716ff610cf85f57674",
+      "normalized_text": "a controller has an establishment in france and processes customer personal data in the context of that establishment although the processing servers are outside the european union does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-001",
+      "scenario_id": "EU-EVAL-001",
+      "scenario_sha256": "009858f8b07ee184ee6429eb33a6f3ccd8d0247b31a98b46a93e3b73f9717b80",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "c305defdc2741b9efda74efef01fcb0e0722699bb961b53f73dfe9348c018b0d",
+      "normalized_text": "a controller with no establishment in the european union offers paid online services specifically to data subjects who are in spain and processes their personal data for those services does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-002",
+      "scenario_id": "EU-EVAL-002",
+      "scenario_sha256": "ca29a33a74bf242645adf30970af1b36e3da5abc1d1182288d326780a7f072cd",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "33b58c6e32182546069a5a19fdc95f71460abb90ec72c57e1f9ae2726dbd0ebe",
+      "normalized_text": "a controller with no establishment in the european union tracks the online behaviour of data subjects while their behaviour takes place in germany does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-003",
+      "scenario_id": "EU-EVAL-003",
+      "scenario_sha256": "ee889c1ab26e58f93d06031d2321351edf8c3fda08c3974a86622fc533cfd8fd",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "0f67fd9e3509783ce9199b83c90a3a9121023848d64cd2d858aa86803cb46311",
+      "normalized_text": "a controller established only in argentina processes personal data only about people in argentina does not offer goods or services to people in the european union and does not monitor behaviour in the european union on the stated facts does the gdpr apply under article 3",
+      "scenario_family_id": "protected::EU-EVAL-004",
+      "scenario_id": "EU-EVAL-004",
+      "scenario_sha256": "64a8e42140916c65df05e1cd6ecc9eebc5b136dc557fca506af2678d5c3c8632",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "9f02f12b2d5e74d82448296853597fe8018bb4b79b2ff11dd38a462ae3f01526",
+      "normalized_text": "a controller outside the european union operates a website visited by some people but the facts do not state whether those people are in the union whether services are offered to them or whether their behaviour is monitored there can gdpr territorial applicability be determined from these facts",
+      "scenario_family_id": "protected::EU-EVAL-005",
+      "scenario_id": "EU-EVAL-005",
+      "scenario_sha256": "433df1e86c2616aebf702b999e70cc995959c5d0dc0938869416063280037a20",
+      "source_dataset": "data/eval/held_out_initial.jsonl"
+    },
+    {
+      "normalized_sha256": "d9c8fe424beefacc5901207f0789b8901bb72227f8480011b0de936a9f8ccb62",
+      "normalized_text": "a company domiciled in nigeria processes customer names and contact details at its lagos office for its nigerian retail service does the nigeria data protection act 2023 apply to this processing",
+      "scenario_family_id": "protected::NG-EVAL-001",
+      "scenario_id": "NG-EVAL-001",
+      "scenario_sha256": "bffa6d567ee27a1e077b3f786d41e764ac77735f4c3c49e15b40b786a7c41f51",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "ff42c483c3636122be7bfd32a3472127ca83daef7f47483869615c2def5a49e2",
+      "normalized_text": "a controller incorporated and operating only in canada remotely collects personal data from individuals while they are in nigeria through a service directed to those individuals does the nigeria data protection act 2023 apply to this processing",
+      "scenario_family_id": "protected::NG-EVAL-002",
+      "scenario_id": "NG-EVAL-002",
+      "scenario_sha256": "d9ba453dcc2edc1b59e38452ae8a17cf13c8e8a9870afc58f24612c596cae3bd",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "41a50a8aca8344eff5ad8f1f21c236aa4f3a0fcaf0e096a54fa3308164002792",
+      "normalized_text": "a company is incorporated domiciled resident and operating only in canada it is not domiciled in resident in or operating in nigeria it processes personal data only about data subjects located in canada and no part of the processing occurs in nigeria on the stated facts does the nigeria data protection act 2023 apply",
+      "scenario_family_id": "protected::NG-EVAL-003",
+      "scenario_id": "NG-EVAL-003",
+      "scenario_sha256": "d25fb061622346613b64cd4f46a36a27b469ca7bc65b611999fc3d23e526d991",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "6537bda24637de58a2282c90a72185be44cc5646b4d125237071ed370f30a964",
+      "normalized_text": "an online service processes personal data but the facts do not state where the controller operates where processing occurs or whether any data subject is in nigeria can applicability of the nigeria data protection act 2023 be determined from these facts",
+      "scenario_family_id": "protected::NG-EVAL-004",
+      "scenario_id": "NG-EVAL-004",
+      "scenario_sha256": "8bd86938274627bc687e9f3f542ddccf88158207a6762d07bda6cc6870b1603c",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "9e709a847d97aaf426db34d8fa0e0f6e107549fcc0533a3548c45a2465735aef",
+      "normalized_text": "a data processor operating from an abuja office processes personal data on behalf of a controller located outside nigeria does the nigeria data protection act 2023 apply to the processor s stated processing",
+      "scenario_family_id": "protected::NG-EVAL-005",
+      "scenario_id": "NG-EVAL-005",
+      "scenario_sha256": "0c9bb6d138919303264f1960a6279faa06b32a44254ec288238434caaabd0b79",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "cac75fa8c47a761ae19d83533ba1763f8ccf07afa9633217f3166647e234d129",
+      "normalized_text": "a company established in kenya processes a recorded customer database by automated means while operating in nairobi does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-001",
+      "scenario_id": "KE-EVAL-001",
+      "scenario_sha256": "d2ac4f848613afd3de754a060e5abddacca17400f99014d028c9e20551359d1e",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "c4d03ad10a52a634eeebe519de7cd80fd8de66bd4ccb8abc0af1c8b126ca5056",
+      "normalized_text": "a controller not established or ordinarily resident in kenya uses an online service to automatically collect record store and otherwise process personal data in electronic customer records about data subjects located in kenya does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-002",
+      "scenario_id": "KE-EVAL-002",
+      "scenario_sha256": "c07983a22efb5ae42eb63eadc09003791f5c4ed91485b0298d7fda8c53766268",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "6b7f4a6f42070deecee68a2cad85919e0be76672ab372c6ecd7d92a7eefb5afb",
+      "normalized_text": "a controller is established and ordinarily resident only in brazil it is not established or ordinarily resident in kenya it processes automated records only about data subjects located in brazil and no processing occurs in kenya on the stated facts does the kenya data protection act 2019 apply",
+      "scenario_family_id": "protected::KE-EVAL-003",
+      "scenario_id": "KE-EVAL-003",
+      "scenario_sha256": "019b524bd95c00d2a10edaf26928e315f668ecdb6054beb5d0ac2d50bb4e4605",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "66764d2b37562c803946e07f27fa8e7ccd8860216bd3ff67fa163a0032b6e5fc",
+      "normalized_text": "a business processes customer information but the facts do not specify whether the information is recorded where the business is established where processing occurs or where the data subjects are located can applicability of the kenya data protection act 2019 be determined from these facts",
+      "scenario_family_id": "protected::KE-EVAL-004",
+      "scenario_id": "KE-EVAL-004",
+      "scenario_sha256": "e0cb553a6e3b1bba432830e81af8f9fc881cba81cba85c63503b6ed03617d220",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "9634a825f0183e58fb58d2125b7afae33ebc9bc4e1a72b3884f1f8dbe4c548ba",
+      "normalized_text": "a processor ordinarily resident in kenya processes a non automated set of personal records that forms part of a structured filing system while in kenya does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-005",
+      "scenario_id": "KE-EVAL-005",
+      "scenario_sha256": "ed4e382cda2eebb36ffca8041e242c1b05568da684089f386f69186d34f73f92",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "446af36fe27c6f34ea7fe411eccffa270cdef6604632cd716ff610cf85f57674",
+      "normalized_text": "a controller has an establishment in france and processes customer personal data in the context of that establishment although the processing servers are outside the european union does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-001",
+      "scenario_id": "EU-EVAL-001",
+      "scenario_sha256": "009858f8b07ee184ee6429eb33a6f3ccd8d0247b31a98b46a93e3b73f9717b80",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "c305defdc2741b9efda74efef01fcb0e0722699bb961b53f73dfe9348c018b0d",
+      "normalized_text": "a controller with no establishment in the european union offers paid online services specifically to data subjects who are in spain and processes their personal data for those services does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-002",
+      "scenario_id": "EU-EVAL-002",
+      "scenario_sha256": "ca29a33a74bf242645adf30970af1b36e3da5abc1d1182288d326780a7f072cd",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "33b58c6e32182546069a5a19fdc95f71460abb90ec72c57e1f9ae2726dbd0ebe",
+      "normalized_text": "a controller with no establishment in the european union tracks the online behaviour of data subjects while their behaviour takes place in germany does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-003",
+      "scenario_id": "EU-EVAL-003",
+      "scenario_sha256": "ee889c1ab26e58f93d06031d2321351edf8c3fda08c3974a86622fc533cfd8fd",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "e9a8da3fecc5bc45217cb63c2719d9d1d191b1cd3dc396f33132e9298b6c6fa5",
+      "normalized_text": "a controller established only in argentina processes personal data only about people in argentina does not offer goods or services to people in the european union and does not monitor behaviour in the european union the controller is not in a place where the law of an eu member state applies by virtue of public international law on the stated facts does the gdpr apply under article 3",
+      "scenario_family_id": "protected::EU-EVAL-004",
+      "scenario_id": "EU-EVAL-004",
+      "scenario_sha256": "e99a66075e4a517c2b4b039caf17eaf7e6519afc788746ceac900832ff837f72",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "9f02f12b2d5e74d82448296853597fe8018bb4b79b2ff11dd38a462ae3f01526",
+      "normalized_text": "a controller outside the european union operates a website visited by some people but the facts do not state whether those people are in the union whether services are offered to them or whether their behaviour is monitored there can gdpr territorial applicability be determined from these facts",
+      "scenario_family_id": "protected::EU-EVAL-005",
+      "scenario_id": "EU-EVAL-005",
+      "scenario_sha256": "433df1e86c2616aebf702b999e70cc995959c5d0dc0938869416063280037a20",
+      "source_dataset": "data/eval/held_out_proposed_v2.jsonl"
+    },
+    {
+      "normalized_sha256": "d9c8fe424beefacc5901207f0789b8901bb72227f8480011b0de936a9f8ccb62",
+      "normalized_text": "a company domiciled in nigeria processes customer names and contact details at its lagos office for its nigerian retail service does the nigeria data protection act 2023 apply to this processing",
+      "scenario_family_id": "protected::NG-EVAL-001",
+      "scenario_id": "NG-EVAL-001",
+      "scenario_sha256": "bffa6d567ee27a1e077b3f786d41e764ac77735f4c3c49e15b40b786a7c41f51",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "ff42c483c3636122be7bfd32a3472127ca83daef7f47483869615c2def5a49e2",
+      "normalized_text": "a controller incorporated and operating only in canada remotely collects personal data from individuals while they are in nigeria through a service directed to those individuals does the nigeria data protection act 2023 apply to this processing",
+      "scenario_family_id": "protected::NG-EVAL-002",
+      "scenario_id": "NG-EVAL-002",
+      "scenario_sha256": "d9ba453dcc2edc1b59e38452ae8a17cf13c8e8a9870afc58f24612c596cae3bd",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "41a50a8aca8344eff5ad8f1f21c236aa4f3a0fcaf0e096a54fa3308164002792",
+      "normalized_text": "a company is incorporated domiciled resident and operating only in canada it is not domiciled in resident in or operating in nigeria it processes personal data only about data subjects located in canada and no part of the processing occurs in nigeria on the stated facts does the nigeria data protection act 2023 apply",
+      "scenario_family_id": "protected::NG-EVAL-003",
+      "scenario_id": "NG-EVAL-003",
+      "scenario_sha256": "d25fb061622346613b64cd4f46a36a27b469ca7bc65b611999fc3d23e526d991",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "6537bda24637de58a2282c90a72185be44cc5646b4d125237071ed370f30a964",
+      "normalized_text": "an online service processes personal data but the facts do not state where the controller operates where processing occurs or whether any data subject is in nigeria can applicability of the nigeria data protection act 2023 be determined from these facts",
+      "scenario_family_id": "protected::NG-EVAL-004",
+      "scenario_id": "NG-EVAL-004",
+      "scenario_sha256": "8bd86938274627bc687e9f3f542ddccf88158207a6762d07bda6cc6870b1603c",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "9e709a847d97aaf426db34d8fa0e0f6e107549fcc0533a3548c45a2465735aef",
+      "normalized_text": "a data processor operating from an abuja office processes personal data on behalf of a controller located outside nigeria does the nigeria data protection act 2023 apply to the processor s stated processing",
+      "scenario_family_id": "protected::NG-EVAL-005",
+      "scenario_id": "NG-EVAL-005",
+      "scenario_sha256": "0c9bb6d138919303264f1960a6279faa06b32a44254ec288238434caaabd0b79",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "cac75fa8c47a761ae19d83533ba1763f8ccf07afa9633217f3166647e234d129",
+      "normalized_text": "a company established in kenya processes a recorded customer database by automated means while operating in nairobi does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-001",
+      "scenario_id": "KE-EVAL-001",
+      "scenario_sha256": "d2ac4f848613afd3de754a060e5abddacca17400f99014d028c9e20551359d1e",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "c4d03ad10a52a634eeebe519de7cd80fd8de66bd4ccb8abc0af1c8b126ca5056",
+      "normalized_text": "a controller not established or ordinarily resident in kenya uses an online service to automatically collect record store and otherwise process personal data in electronic customer records about data subjects located in kenya does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-002",
+      "scenario_id": "KE-EVAL-002",
+      "scenario_sha256": "c07983a22efb5ae42eb63eadc09003791f5c4ed91485b0298d7fda8c53766268",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "6b7f4a6f42070deecee68a2cad85919e0be76672ab372c6ecd7d92a7eefb5afb",
+      "normalized_text": "a controller is established and ordinarily resident only in brazil it is not established or ordinarily resident in kenya it processes automated records only about data subjects located in brazil and no processing occurs in kenya on the stated facts does the kenya data protection act 2019 apply",
+      "scenario_family_id": "protected::KE-EVAL-003",
+      "scenario_id": "KE-EVAL-003",
+      "scenario_sha256": "019b524bd95c00d2a10edaf26928e315f668ecdb6054beb5d0ac2d50bb4e4605",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "66764d2b37562c803946e07f27fa8e7ccd8860216bd3ff67fa163a0032b6e5fc",
+      "normalized_text": "a business processes customer information but the facts do not specify whether the information is recorded where the business is established where processing occurs or where the data subjects are located can applicability of the kenya data protection act 2019 be determined from these facts",
+      "scenario_family_id": "protected::KE-EVAL-004",
+      "scenario_id": "KE-EVAL-004",
+      "scenario_sha256": "e0cb553a6e3b1bba432830e81af8f9fc881cba81cba85c63503b6ed03617d220",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "9634a825f0183e58fb58d2125b7afae33ebc9bc4e1a72b3884f1f8dbe4c548ba",
+      "normalized_text": "a processor ordinarily resident in kenya processes a non automated set of personal records that forms part of a structured filing system while in kenya does the kenya data protection act 2019 apply to this processing",
+      "scenario_family_id": "protected::KE-EVAL-005",
+      "scenario_id": "KE-EVAL-005",
+      "scenario_sha256": "ed4e382cda2eebb36ffca8041e242c1b05568da684089f386f69186d34f73f92",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "446af36fe27c6f34ea7fe411eccffa270cdef6604632cd716ff610cf85f57674",
+      "normalized_text": "a controller has an establishment in france and processes customer personal data in the context of that establishment although the processing servers are outside the european union does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-001",
+      "scenario_id": "EU-EVAL-001",
+      "scenario_sha256": "009858f8b07ee184ee6429eb33a6f3ccd8d0247b31a98b46a93e3b73f9717b80",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "c305defdc2741b9efda74efef01fcb0e0722699bb961b53f73dfe9348c018b0d",
+      "normalized_text": "a controller with no establishment in the european union offers paid online services specifically to data subjects who are in spain and processes their personal data for those services does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-002",
+      "scenario_id": "EU-EVAL-002",
+      "scenario_sha256": "ca29a33a74bf242645adf30970af1b36e3da5abc1d1182288d326780a7f072cd",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "33b58c6e32182546069a5a19fdc95f71460abb90ec72c57e1f9ae2726dbd0ebe",
+      "normalized_text": "a controller with no establishment in the european union tracks the online behaviour of data subjects while their behaviour takes place in germany does the gdpr apply to this processing under its territorial scope rule",
+      "scenario_family_id": "protected::EU-EVAL-003",
+      "scenario_id": "EU-EVAL-003",
+      "scenario_sha256": "ee889c1ab26e58f93d06031d2321351edf8c3fda08c3974a86622fc533cfd8fd",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "e9a8da3fecc5bc45217cb63c2719d9d1d191b1cd3dc396f33132e9298b6c6fa5",
+      "normalized_text": "a controller established only in argentina processes personal data only about people in argentina does not offer goods or services to people in the european union and does not monitor behaviour in the european union the controller is not in a place where the law of an eu member state applies by virtue of public international law on the stated facts does the gdpr apply under article 3",
+      "scenario_family_id": "protected::EU-EVAL-004",
+      "scenario_id": "EU-EVAL-004",
+      "scenario_sha256": "e99a66075e4a517c2b4b039caf17eaf7e6519afc788746ceac900832ff837f72",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    },
+    {
+      "normalized_sha256": "9f02f12b2d5e74d82448296853597fe8018bb4b79b2ff11dd38a462ae3f01526",
+      "normalized_text": "a controller outside the european union operates a website visited by some people but the facts do not state whether those people are in the union whether services are offered to them or whether their behaviour is monitored there can gdpr territorial applicability be determined from these facts",
+      "scenario_family_id": "protected::EU-EVAL-005",
+      "scenario_id": "EU-EVAL-005",
+      "scenario_sha256": "433df1e86c2616aebf702b999e70cc995959c5d0dc0938869416063280037a20",
+      "source_dataset": "data/eval/held_out_approved_v1.jsonl"
+    }
+  ],
+  "unique_scenario_ids": 15
+}

@@ -1,0 +1,21 @@
+{
+  "blocking_issue_count": 0,
+  "candidate_count": 90,
+  "export_allowed": false,
+  "export_blockers": [
+    "All candidate records require human legal review.",
+    "Every flagged near-match requires documented manual resolution."
+  ],
+  "family_overlaps": [],
+  "flagged_near_matches": [],
+  "id_overlaps": [],
+  "normalized_exact_matches": [],
+  "protected_signature_count": 45,
+  "report_version": "leakage-v1",
+  "thresholds": {
+    "character_jaccard": 0.55,
+    "character_ngram_size": 5,
+    "token_jaccard": 0.45,
+    "token_ngram_size": 3
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "candidate_file": "data/train/candidates_v1.jsonl",
+  "candidate_file_sha256": "b72736053237dd10bf00f6576852c8a75d0e17e9431c89116f9c7947cb084456",
+  "dataset_revision": "candidate-training-v1",
+  "export_status": "BLOCKED_PENDING_LEGAL_REVIEW",
+  "held_out_registry_version": "protected-held-out-v1",
+  "jurisdiction_distribution": {
+    "EU": 30,
+    "KENYA": 30,
+    "NIGERIA": 30
+  },
+  "label_distribution": {
+    "APPLIES": 30,
+    "DOES_NOT_APPLY": 30,
+    "INSUFFICIENT_INFORMATION": 30
+  },
+  "leakage_report_version": "leakage-v1",
+  "notes": "No prompt/completion files are exported until legal approval and leakage clearance are both recorded.",
+  "origin": "SYNTHETIC_UNVERIFIED",
+  "record_count": 90,
+  "review_status_distribution": {
+    "PENDING_REVIEW": 90
+  },
+  "split_distribution": {
+    "TRAIN": 72,
+    "VALIDATION": 18
+  },
+  "split_jurisdiction_label_distribution": {
+    "TRAIN": {
+      "EU": {
+        "APPLIES": 8,
+        "DOES_NOT_APPLY": 8,
+        "INSUFFICIENT_INFORMATION": 8
+      },
+      "KENYA": {
+        "APPLIES": 8,
+        "DOES_NOT_APPLY": 8,
+        "INSUFFICIENT_INFORMATION": 8
+      },
+      "NIGERIA": {
+        "APPLIES": 8,
+        "DOES_NOT_APPLY": 8,
+        "INSUFFICIENT_INFORMATION": 8
+      }
+    },
+    "VALIDATION": {
+      "EU": {
+        "APPLIES": 2,
+        "DOES_NOT_APPLY": 2,
+        "INSUFFICIENT_INFORMATION": 2
+      },
+      "KENYA": {
+        "APPLIES": 2,
+        "DOES_NOT_APPLY": 2,
+        "INSUFFICIENT_INFORMATION": 2
+      },
+      "NIGERIA": {
+        "APPLIES": 2,
+        "DOES_NOT_APPLY": 2,
+        "INSUFFICIENT_INFORMATION": 2
+      }
+    }
+  }
+}
