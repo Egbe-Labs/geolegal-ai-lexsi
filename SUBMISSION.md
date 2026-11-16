@@ -33,8 +33,8 @@ Tiny Aya E1 baseline, user-reported: **46.67% accuracy / 24.56% macro F1 / 66.67
 ## Artifact links
 
 - GitHub: https://github.com/Egbe-Labs/geolegal-ai-lexsi
-- Hugging Face model collection: **NOT YET PUBLISHED**
-- Hugging Face dataset collection: **NOT YET PUBLISHED**
+- Hugging Face model collection: https://huggingface.co/collections/EA-Labs/geolegal-ai-models
+- Hugging Face dataset repository: https://huggingface.co/datasets/EA-Labs/geolegal-ai-dataset
 - Write-up: repository `README.md`
 - Demo/Space: **NOT AVAILABLE**
 - Video/slides: **NOT AVAILABLE**
@@ -47,3 +47,5 @@ Tiny Aya E1 baseline, user-reported: **46.67% accuracy / 24.56% macro F1 / 66.67
 - Author contributions: **OWNER MUST SUPPLY**
 - LLM/AI assistance statement: **OWNER MUST SUPPLY**
 - Finalist/late-submission eligibility: **OWNER MUST CONFIRM**
+
+Hugging Face article publication returned HTTP 403, so the GitHub README is the canonical write-up accepted by Lexsi. The supplied Hugging Face links should be checked while logged out to confirm public, ungated access.

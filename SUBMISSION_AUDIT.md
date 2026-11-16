@@ -17,8 +17,8 @@ GeoLegal-AI is publishable as a transparent baseline research prototype, but it 
 | Prefer three Track 1 repositories | No executed chain | Not met | Future: CuratorKIT → AlignTune → AuditKIT |
 | More than one before/after metric | Only provisional E1 metrics; no post-training run | **Not met** | Fine-tune and evaluate later; do not fabricate |
 | Public project/repository | GitHub origin configured | Public visibility not independently verified | Confirm in logged-out browser |
-| Public, ungated HF model collection | No URL recorded | **Missing** | Create only after adapter exists and licensing permits |
-| Public HF dataset/log collection | No URL recorded | **Missing** | Publish cleared artifacts only |
+| Public, ungated HF model collection | `https://huggingface.co/collections/EA-Labs/geolegal-ai-models` supplied by project owner | Visibility not independently verified; no fine-tuned adapter claimed | Confirm while logged out |
+| Public HF dataset/log collection | `https://huggingface.co/datasets/EA-Labs/geolegal-ai-dataset` supplied by project owner | Visibility not independently verified | Confirm while logged out |
 | Abstract under 500 words | Draft in `SUBMISSION.md` | Ready after owner review | Review text |
 | Write-up identifies track/problem statements | README | Ready | None |
 | Model, configuration, version, license | README and dependency decisions | Ready | None |
@@ -48,6 +48,6 @@ GeoLegal-AI is publishable as a transparent baseline research prototype, but it 
 2. Supply the registered email and teammate/Hugging Face usernames directly to the submission form, not the repository.
 3. Recover and add the exact Colab-generated row-level E1 prediction file and matching metrics JSON.
 4. Confirm public visibility of GitHub from a logged-out session.
-5. Create public Hugging Face collections only for artifacts cleared for ungated release; add their URLs to `SUBMISSION.md` and README.
+5. Confirm the supplied Hugging Face model collection and dataset repository are public and ungated from a logged-out browser; publish only artifacts cleared for release.
 6. Provide truthful work-outside-hackathon, author-contribution, and LLM-use statements.
 7. Submit the provisional baseline only with the limitations above; do not select fields implying completed fine-tuning or toolkit chaining.

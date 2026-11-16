@@ -22,6 +22,17 @@ User-reported Colab baseline results are 46.67% accuracy, 24.56% macro F1, and 6
 
 The official hackathon requires Track 1 submissions to use at least two track repositories together, prefers three, requires more than one before/after metric, and requires created models, adapters, logs, and datasets to be hosted publicly on Hugging Face. See the [official rules](https://hackathon.lexsi.ai/).
 
+Hugging Face article publication returned HTTP 403 for the project owner. Lexsi explicitly permits a GitHub repository README as the write-up, so this README is the canonical hackathon article and reproducibility record.
+
+## Public artifacts
+
+- **Canonical write-up:** this GitHub README
+- **GitHub repository:** https://github.com/Egbe-Labs/geolegal-ai-lexsi
+- **Hugging Face model collection:** https://huggingface.co/collections/EA-Labs/geolegal-ai-models
+- **Hugging Face dataset repository:** https://huggingface.co/datasets/EA-Labs/geolegal-ai-dataset
+
+The model collection and dataset repository links were supplied by the project owner. Fine-tuned weights or adapters are not claimed: fine-tuning is unfinished.
+
 ## Problem
 
 Territorial applicability is an early and error-prone step in privacy analysis. A system must identify the relevant jurisdiction, apply its territorial-scope conditions, abstain when decisive facts are absent, and ground its answer in the governing statute. Generic legal chat can hide uncertainty or produce unsupported provisions.
@@ -191,7 +202,7 @@ The official minimum two-repository Track 1 chain is therefore **not yet satisfi
 - No executed two-kit Track 1 chain.
 - No before/after result table.
 - User-reported E1 row-level predictions and scored metrics artifact are missing from the repository.
-- No public Hugging Face model collection or dataset collection is recorded.
+- The supplied Hugging Face model collection and dataset repository should be checked from a logged-out browser to confirm public, ungated access.
 - Candidate training data still requires legal review and contains documented issues.
 - Citation support, unsupported claims, and abstention-quality review are incomplete.
 - Team registration/finalist status is not recorded. The initial deadline was November 15, 2026; only shortlisted teams have the November 22 final stage.
